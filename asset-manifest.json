@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TabrejQuadir/Leaderboard-Internship/static/css/main.723294a8.css",
-    "main.js": "/TabrejQuadir/Leaderboard-Internship/static/js/main.0c81ae2c.js",
-    "static/js/453.0c408937.chunk.js": "/TabrejQuadir/Leaderboard-Internship/static/js/453.0c408937.chunk.js",
-    "static/media/image 65 (1).png": "/TabrejQuadir/Leaderboard-Internship/static/media/image 65 (1).5a5f2430ba90955b3424.png",
-    "static/media/background.png": "/TabrejQuadir/Leaderboard-Internship/static/media/background.3c20f82b3ff68fdbcf48.png",
-    "index.html": "/TabrejQuadir/Leaderboard-Internship/index.html",
-    "main.723294a8.css.map": "/TabrejQuadir/Leaderboard-Internship/static/css/main.723294a8.css.map",
-    "main.0c81ae2c.js.map": "/TabrejQuadir/Leaderboard-Internship/static/js/main.0c81ae2c.js.map",
-    "453.0c408937.chunk.js.map": "/TabrejQuadir/Leaderboard-Internship/static/js/453.0c408937.chunk.js.map"
+    "main.css": "/Leaderboard-Internship/static/css/main.8458f75e.css",
+    "main.js": "/Leaderboard-Internship/static/js/main.49a97915.js",
+    "static/js/453.0c408937.chunk.js": "/Leaderboard-Internship/static/js/453.0c408937.chunk.js",
+    "static/media/image 65 (1).png": "/Leaderboard-Internship/static/media/image 65 (1).5a5f2430ba90955b3424.png",
+    "static/media/background.png": "/Leaderboard-Internship/static/media/background.3c20f82b3ff68fdbcf48.png",
+    "index.html": "/Leaderboard-Internship/index.html",
+    "main.8458f75e.css.map": "/Leaderboard-Internship/static/css/main.8458f75e.css.map",
+    "main.49a97915.js.map": "/Leaderboard-Internship/static/js/main.49a97915.js.map",
+    "453.0c408937.chunk.js.map": "/Leaderboard-Internship/static/js/453.0c408937.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.723294a8.css",
-    "static/js/main.0c81ae2c.js"
+    "static/css/main.8458f75e.css",
+    "static/js/main.49a97915.js"
   ]
 }
