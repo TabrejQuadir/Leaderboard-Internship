@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: teal;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 30px;
+    animation: scrollFooter 5s alternate-reverse infinite;
+    font-size: 1.2em;
+}
+
+@keyframes scrollFooter {
+    0% { transform: translateX(-90%); }
+    100% { transform: translateX(90%); }
+}

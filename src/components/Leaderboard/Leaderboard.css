@@ -1,0 +1,256 @@
+/* General Styles */
+.leaderboard {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.leaderboard-title {
+    color: #ffffff;
+    background-color: black;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.1),
+        0 0 20px rgba(255, 255, 255, 0.7),
+        0 0 30px rgba(255, 255, 255, 0.5),
+        0 0 40px rgba(255, 255, 255, 0.4),
+        0 0 50px rgba(255, 255, 255, 0.3),
+        0 0 60px rgba(255, 255, 255, 0.2),
+        0 0 70px rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.leaderboard-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #aaa;
+    border-bottom: 1px solid #444;
+}
+
+.header-item {
+    width: 33.33%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #efef27;
+}
+
+.leaderboard-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.score-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 0 0 50px 0;
+}
+
+.score-entry:hover {
+    background-color: #c73737;
+    cursor: pointer;
+}
+
+.rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 33.33%;
+    text-align: center;
+}
+
+.rank-1 {
+    background: rgba(255, 224, 22, 0.786);
+    color: black;
+}
+
+.rank-1 .username, .rank-1 .score,
+.rank-2 .username, .rank-2 .score {
+    color: black;
+}
+
+.rank-2 {
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.rank-3 {
+    background-color: #ff8c00;
+}
+
+.medal {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.medal-1 { color: rgb(80, 237, 109); }
+.medal-2 { color: rgb(80, 54, 2); }
+.medal-3 { color: #555bf8; }
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 66.66%;
+}
+
+.username {
+    font-weight: bold;
+    color: #fff;
+    width: 50%;
+    text-align: left;
+    padding-left: 110px;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    width: 50%;
+    text-align: right;
+    padding-right: 120px;
+}
+
+/* Styles for hr elements */
+.goldenrod-left-1, .goldenrod-left-2, .goldenrod-left-3, .aqua-right-1, .aqua-right-2, .aqua-right-3 {
+    position: absolute;
+    height: 3px;
+    border-radius: 50px;
+}
+
+.goldenrod-left-1 {
+    top: 30px;
+    left: 20px;
+    width: 210px;
+    background-color: goldenrod;
+}
+
+.goldenrod-left-2 {
+    top: 40px;
+    left: 20px;
+    width: 200px;
+    background-color: goldenrod;
+}
+
+.goldenrod-left-3 {
+    top: 50px;
+    left: 20px;
+    width: 190px;
+    background-color: goldenrod;
+}
+
+.aqua-right-1 {
+    top: 30px;
+    right: 20px;
+    width: 210px;
+    background-color: aqua;
+    border-radius: 0 50px 50px 0;
+}
+
+.aqua-right-2 {
+    top: 40px;
+    right: 20px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 0 50px 50px 0;
+}
+
+.aqua-right-3 {
+    top: 50px;
+    right: 20px;
+    width: 190px;
+    background-color: aqua;
+    border-radius: 0 50px 50px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .leaderboard {
+        padding: 10px;
+    }
+
+    .leaderboard-list{
+        max-width: 400px;
+
+    }
+
+    .leaderboard-title {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .leaderboard-list-header {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+
+    .header-item {
+        font-size: 14px;
+    }
+
+    .score-entry {
+        padding: 8px 0;
+        font-size: 1em;
+        /* flex-direction: column; */
+    }
+
+    .details {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .username, .score {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .rank {
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .goldenrod-left-1, .goldenrod-left-2, .goldenrod-left-3 {
+        width: 70px;
+        left: 10px;
+    }
+
+    .aqua-right-1, .aqua-right-2, .aqua-right-3 {
+        width: 70px;
+        right: 10px;
+    }
+    
+    .goldenrod-left-1, .aqua-right-1 {
+        top: 20px;
+    }
+
+    .goldenrod-left-2, .aqua-right-2 {
+        top: 30px;
+    }
+
+    .goldenrod-left-3, .aqua-right-3 {
+        top: 40px;
+    }
+}

@@ -1,0 +1,67 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.app::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    background: url('../public/assets/image 65 (1).png') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.add-score-btn {
+    margin: 20px 0;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    background: #3ad0fe;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px 10px 40px 10px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.add-score-btn:hover {
+    background: #000000;
+    font-weight: bolder;
+    border: 1px dotted white;
+    color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .app {
+        padding: 10px;
+    }
+
+    .app::before {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .add-score-btn {
+        margin: 15px 0;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 20px 5px 20px 5px;
+    }
+}
